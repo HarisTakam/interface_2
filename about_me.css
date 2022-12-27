@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@900&family=Ubuntu:wght@300&display=swap');
+
+
+:root {
+    --header-bg: #f8f8f8 0% 0% no-repeat padding-box;
+    --text-color-bleu1: #1792d2;
+    --text-color-bleu2: #143774;
+    --text-color-gray: #707070;
+    --footer-bg: #143774 0% 0% no-repeat padding-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scrollbar-width: none;
+}
+
+header {
+    background: var(--header-bg);
+    height: 256px;
+}
+
+nav {
+    justify-content: space-between;
+    display: flex;
+    padding-top: 80px;
+}
+
+.logo {
+    margin-left: 300px;
+}
+
+.logo a {
+    text-align: left;
+    font: normal normal normal 33px/42px "Lora";
+    letter-spacing: 0px;
+    color: var(--text-color-bleu2);
+    opacity: 1;
+}
+
+.logo p {
+    text-align: left;
+    font: normal normal bold 12px/13px Ubuntu;
+    letter-spacing: 2.4px;
+    color: var(--text-color-bleu1);
+    text-transform: uppercase;
+}
+
+ul {
+    display: flex;
+    margin-right: 200px;
+}
+
+li {
+    margin: 20px;
+    list-style-type: none;
+}
+
+li a {
+    text-align: right;
+    font: normal normal bold 16px/18px Ubuntu;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    color: var(--text-color-gray);
+}
+
+a.active {
+    border-bottom: 2px solid gray;
+}
+
+.container {
+    display: flex;
+    margin-top: 20px;
+    height: auto;
+}
+
+main {
+    width: 1100px;
+    height: auto;
+}
+
+.content1 {
+    margin-left: 300px;
+    margin-bottom: 50px;
+    /* border-bottom: 1px solid gray; */
+    /* height: auto; */
+}
+
+img.un {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+
+}
+
+.info {
+    text-align: left;
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: var(--text-color-gray);
+    opacity: 1;
+}
+
+.titre {
+    /* margin-top: 25px; */
+    text-align: left;
+    font: normal normal normal 24px 'Lora';
+    letter-spacing: 0px;
+    color: var(--text-color-bleu2);
+    opacity: 1;
+}
+
+.contenu {
+    font-size: 18px;
+    letter-spacing: 1px;
+    /* font-family: sans-serif; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--text-color-gray);
+}
+
+.contenu a {
+    text-align: left;
+    font: normal normal 300 18px/28px Ubuntu;
+    letter-spacing: 2px;
+    color: var(--text-color-bleu1);
+}
+
+.flex {
+    display: flex;
+}
+
+aside {
+    margin-left: 30px;
+    /* background: var(--text-color-gray); */
+    width: 470px;
+    height: 800px;
+}
+
+.card {
+    width: 200px;
+    background: white;
+    border: 20px solid #EBEBEB;
+    height: auto;
+    text-align: center;
+}
+
+.titre-card {
+    font: normal normal bold 18px/28px Ubuntu;
+    letter-spacing: 3.6px;
+    color: var(--text-color-bleu2);
+    text-transform: uppercase;
+    opacity: 1;
+    margin-bottom: 10px;
+}
+
+.description {
+    text-align: left;
+    color: var(--text-color-bleu2);
+    opacity: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+.description.xl {
+    height: 50px;
+    border-bottom: 1px solid #1792d2;
+}
+
+.card .imageSize {
+    margin-left: 20px;
+    width: 150px;
+    height: auto;
+}
+
+img {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    background: var(--footer-bg);
+    height: 100px;
+    padding-top: 60px;
+}
+
+.pied_page p {
+    text-align: center;
+    font: normal normal 300 18px/28px Ubuntu;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.pied_page .p1 {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 550px) {
+    header {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav {
+        display: block;
+        padding-top: 30px;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .logo p {
+        margin-left: 41px;
+    }
+
+    .menu {
+        /* display: inline-block; */
+        flex-direction: column;
+        margin-right: 0px;
+    }
+
+    .container {
+        flex-direction: column;
+        margin-top: 0px;
+        height: auto;
+        margin-left: -300px;
+    }
+
+    .content1 {
+        margin-left: 300px;
+        margin-bottom: 30px;
+        padding: 20px;
+        border-bottom: 1px solid gray;
+    }
+
+    .flex {
+        display: block;
+    }
+
+    main {
+        width: 100%;
+        height: auto;
+    }
+
+    .content1 {
+        margin-left: 300px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid gray;
+    }
+
+    .info {
+        text-align: right;
+    }
+
+    .content2 {
+        padding: 10px;
+    }
+
+    .content2 .description {
+        margin-left: 0px;
+    }
+
+    .flex {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content2 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    aside {
+        margin-left: 300px;
+        /* background: var(--text-color-gray); */
+        width: auto;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .card {
+        width: auto;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .description {
+        min-width: 428px;
+    }
+
+    .card .imageSize {
+        margin: 0;
+    }
+
+    .img_post {
+        width: 428px;
+        height: 160px;
+        object-fit: cover;
+        object-position: top bottom;
+    }
+}
